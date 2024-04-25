@@ -2,7 +2,7 @@
  
  This repository contains all data used to produce the results in the following paper:
 
-<b><i>A SSD approach to enhanced indexation with sector constraints</i></b>
+<b><i>Subset SSD for enhanced indexation with sector constraints</i></b>
 
 The following files are available:
  
