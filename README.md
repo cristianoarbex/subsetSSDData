@@ -21,3 +21,9 @@ The following files are available:
 Data for CRSP indices has not been included as it is not publicly available.
 
 In the paper, the experiments were run from 2018-12-31 until 2023-12-31. Every rebalance uses 60-days of historical returns ending at the day of the rebalance, hence the data also includes 60 prices prior to 2018-12-31.
+
+With respect to a minor technical point here while there are eleven sector indices according
+to GICS, only one of the 49 Fama-French portfolios fits into the real estate sector. To
+prevent a sector portfolio containing a single asset we then merged, for this experiment,
+the financials and real estate sectors into one. We did this for both the equally-weighted
+and the CRSP sector indices.
