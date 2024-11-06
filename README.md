@@ -15,8 +15,9 @@ The following files are available:
 **Fama-French 49 industry portfolios**
 
  -  `marketDataFF.csv`: A csv file containing prices for every one of the 49 Fama-French industry portfolios, from the end of 2018 to the end of 2023. Each row represents a date and each columns an asset; assets are identifier by their ticker. A missing price means that the corresponding portfolio was not computed at the time. Note that the original data is given as daily returns, we computed prices assuming an initial price of $0.1 in 1926 (when the data begins) and compounded the returns accordingly.
- -  `marketDataFF_CRSP_benchmarks.csv`: A csv file containing prices for CRSP benchmarks, including the CRSP NYSE Value-Weighted Market Index (code: CRSPVWMI) and the CRSP US sector indices.
  -  `marketDataFF_EW_benchmarks.csv`: A csv file containing prices for the equally-weighted benchmarks as calculated in our paper, including the equally-weighted benchmark of all 49 portfolios (code: EW) and the equally-weighted sector indices.
  -  `marketDataFF_tags.csv`: A csv file containing the sector to which each portfolio belongs, as classified by us. Note that since `real estate` is a single portfolio, it was put into the financials sector. So effectivelly there are 10 Fama-French sectors instead of 11 as above in the US data.
+
+Note that we did not include CRSP data is it is proprietary.
 
 In the paper, the experiments were run from 2018-12-31 until 2023-12-31. Every rebalance uses 60-days of historical returns ending at the day of the rebalance, hence the data also includes 60 prices prior to 2018-12-31.
