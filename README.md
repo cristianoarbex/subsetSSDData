@@ -18,6 +18,6 @@ The following files are available:
  -  `marketDataFF_EW_benchmarks.csv`: A csv file containing prices for the equally-weighted benchmarks as calculated in our paper, including the equally-weighted benchmark of all 49 portfolios (code: EW) and the equally-weighted sector indices.
  -  `marketDataFF_tags.csv`: A csv file containing the sector to which each portfolio belongs, as classified by us. Note that since `real estate` is a single portfolio, it was put into the financials sector. So effectivelly there are 10 Fama-French sectors instead of 11 as above in the US data.
 
-Note that we did not include CRSP data is it is proprietary.
+Data for CRSP indices has not been included as it is not publicly available.
 
 In the paper, the experiments were run from 2018-12-31 until 2023-12-31. Every rebalance uses 60-days of historical returns ending at the day of the rebalance, hence the data also includes 60 prices prior to 2018-12-31.
